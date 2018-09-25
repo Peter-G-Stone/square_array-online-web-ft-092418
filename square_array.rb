@@ -1,4 +1,7 @@
 def square_array(array)
-  final = array.collect { |x| x**2 }
+  final = []
+  array.each do |member|
+    final.push(member**2)
+  end
   return final
 end
